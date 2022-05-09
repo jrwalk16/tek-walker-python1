@@ -25,7 +25,7 @@ introduction_with_mix_of_default_args("Jeremy")
 def product_of_two_num(num1, num2):
     return num1 * num2
 
-product_of_two_num(4, 20)
+
 # function with arbitrary arguments
 # User of this function will pass in N number of real numbers, which will be converted into a tuple.
 # The for loop inside the function will iterate over the function and sum up all the numbers and return the sum

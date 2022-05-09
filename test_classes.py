@@ -5,7 +5,7 @@ As an example, you might use a class to represent a website user. The class woul
 Many external libraries are written as classes, so learn-ing to work with classes makes it easier to work with many existing projects.
 '''
 
-ar = Arithmetic()
+ar = Arithmetic(15, 5)
 print(ar.add())
 print(ar.divide())
 print(ar.remainder())
@@ -13,3 +13,5 @@ ar.print_self()
 
 #TODO: create several more instance of the Arithmetic class and add different values
 
+print(ar.subtract())
+print(ar.multiply())
