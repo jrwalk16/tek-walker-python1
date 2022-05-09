@@ -173,7 +173,8 @@ for x in string:
 print(reversed)
 
 # TODO: Reverse a number: input = 1234, output = 4321
-
+num = 1234
+print(str(num)[::-1])
 
 
 '''
@@ -232,7 +233,13 @@ for index, fruit in enumerate(my_list):
 
 #TODO: Using a for loop update every item in the my_list list into dessert items
 # dessert = ["apple cake", "banana cake", "donut", "fudge", "ice cream", "jilapi"]
+my_list = ["apple", "banana", "cherry", "mango", "pineapple", "watermelon"]
 
+for i in range(len(my_list)):
+    my_list.clear()
+    my_list.insert(len(my_list),"apple cake", "banana cake", "donut", "fudge", "ice cream", "jilapi")
+
+print(my_list)
 
 
 print("-------------------- Dictionary ---------------------------------\n")
@@ -273,3 +280,15 @@ for key, value in country_capital_dict.items():
 #TODO: Create 5 lists of real life items and create 5 dictionaries. For example, 
 # for list, I would create a list for list of chores I need to do on weekends. i.e chores = ['laundry', 'pick-up mail', 'clean the apt']
 # for dictionary, I would have friends to phone number. friends = {'jose': '718-233-6464', 'ali': '646-232-2323'}
+
+house_rooms = ["kitchen", "bathroom", "bedroom", "living room", "office"]
+software_jobs = ["engineer", "project manager", "data scientist", "QA tester"]
+school_subjects = ["calculus", "history", "algebra", "chemistry"]
+apple_products = ["iPad", "iPod", "iMac", "Macbook"]
+sports = ["basketball", "baseball", "football", "soccer"]
+
+superhero_alias = {"Batman": "Bruce Wayne", "Superman": "Clark Kent", "Spiderman": "Peter Parker", "Iron Man": "Tony Stark"}
+car_models= {"Chevrolet": "Camaro", "Ford": "Mustang", "Chevrolet": "Corvette"}
+college_schedule = {"Mutant Powers": "Professor X", "Spells and Potions": "Professor Snape", "English Composition": "John Keating"}
+movie_directors = {"Star Wars": "George Lucas", "Jurassic Park": "Steven Spielber", "Avatar": "James Cameron"}
+new_york_sports_teams = {"Basketball": "Knicks", "Hockey": "Rangers", "Baseball": "Yankees"}

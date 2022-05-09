@@ -20,10 +20,12 @@ def introduction_with_default_args(first_name = "John", last_name = "Doe"):
 def introduction_with_mix_of_default_args(first_name, last_name = "Doe"):
     print("Hi, my name is %s %s. Nice to meet you!\n" % (first_name, last_name))
 
+introduction_with_mix_of_default_args("Jeremy")
 # function that returns value(s)
 def product_of_two_num(num1, num2):
     return num1 * num2
 
+product_of_two_num(4, 20)
 # function with arbitrary arguments
 # User of this function will pass in N number of real numbers, which will be converted into a tuple.
 # The for loop inside the function will iterate over the function and sum up all the numbers and return the sum
@@ -34,10 +36,12 @@ def add_all_nums(*nums):
         sums += num
     return sums
 
+
 double = lambda x: x * 2
 # Equivalant function
 def double(x):
    return x * 2
+
 
 print("-------------------------- recursive function ---------------------")
 '''
@@ -51,6 +55,8 @@ def fib(num):
     else:
         return fib(num - 1) + fib(num - 2)
 
+
+
 # Scoping: variables have different level of visibility based on where they are defined
 # Instance level variables are scoped to the class, meaning any function or control statement has access to it
 # Function/method level variables are only visible to the function it was declared in 
@@ -61,6 +67,7 @@ def subtract(num1, num2):
     result = num1 - num2
     return result 
 
+subtract(5,99)
 # Control statement level scoping: variable i in the control statement below is only available to the for loop
 for i in range(1, 5):
     print(i)
@@ -70,16 +77,22 @@ print("------------ End of Function Initialization ---------------------\n\n")
 #TODO: Write a function that returns true if the input string is a palindrome string.
 # Inpute type: String
 # Return type: Boolean 
+def check_if_palindrome(string):
+    reverse_string = string[::-1]
+    if string == reverse_string:
+        return True
+    else:
+        return False
 
-
+check_if_palindrome("race")
 '''
 Boolean values can represent the state of a program or a certain condition. For example, you can use variables such as game_active, can_edit, and polling_open, which take either a True or False value. When these values are True, certain code sections are enabled as the program runs.
 '''
 # sample input1: bob
-
+check_if_palindrome("bob")
 # sample output1: true
 
 # sample input2: Jose
-
+check_if_palindrome("Jose")
 # sample output2: false
 
